@@ -1,0 +1,88 @@
+/******* Sticky footer (based on bootstrap examples) *********/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/******* Footer stands clearer *********/
+footer {
+  background-color: #f5f5f5;
+  padding-top: 40px;
+}
+
+/******* Incorporation of the logo inside navbar *********/
+.navbar-nav {
+  padding-top: 30px; /* make navbar links on the same line with brand image */
+}
+
+.navbar-brand img {
+  height: 70px; /* resize brand image to be smaller than the real one */
+}
+
+.navbar-brand {
+  height: auto; /* make brand image stay inside navbar */
+}
+
+/******* Some space between sections *********/
+section {
+  padding: 100px 0px;
+}
+
+/******* Get rid of borders *********/
+.thumbnail {
+  /*border: none;*/
+}
+.panel {
+  /*border: none;*/
+}
+
+/******* Options for masonry *********/
+.grid-item {
+  margin: 0px;
+}
+
+/******* Center caption of grid item on the image *********/
+/* TODO see later to make caption vertically align */
+.grid-item {
+  /*position: relative;*/
+}
+.grid-item .caption {
+  /*position: absolute;
+  top: 40%;
+  width: 100%;*/
+}
+.grid-item .caption h4{
+  /*color: #ffffff;*/
+}
+
+/******* Social (see http://www.himpfen.com/social-sharing-buttons-bootstrap-font-awesome/) *********/
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
