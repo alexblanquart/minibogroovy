@@ -9,6 +9,13 @@ title: Minibo
         </div>
     </div>
     <div class="row">
-        
+        {% for category in site.data.categories %}<div class="col-sm-6 col-md-4">
+        	<div class="thumbnail">
+			     <img src="/images/thumbs/{{ category.image }}">
+			     <div class="caption text-center">
+			         <h3>{{ category.title }}</h3>
+			     </div>
+			 </div>
+        </div>{% endfor %}
     </div>
 </div>
