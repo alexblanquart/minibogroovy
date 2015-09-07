@@ -1,4 +1,5 @@
-title:            Minibo
-url:              http://alexblanquart.github.io/minibo
-baseurl:          /minibo/
-paginate:         1
+title: Minibo
+url: http://alexblanquart.github.io/minibo
+baseurl: /minibo/
+paginate: 1
+images:	/images
