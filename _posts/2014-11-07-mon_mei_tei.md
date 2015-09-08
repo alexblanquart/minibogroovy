@@ -12,4 +12,4 @@ Elle est réglable en hauteur (de dos) et largeur (taille d’assis) et je l’u
 
 Mon mei Tei m’a aidé à descendre et monter les escaliers des falaises des plages d’Algarve !!!
 
-![]({{ site.images }}image8.png)
+![]({{ site.baseurl }}/{{ site.images }}/image8.png)

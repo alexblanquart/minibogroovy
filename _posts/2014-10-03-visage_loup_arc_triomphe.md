@@ -12,4 +12,4 @@ Je vois de vieux messieurs, un loup et l’arc de triomphe inversés!!
 
 C’est génial ce que l’on peut faire sans vraiment réfléchir … ;)
 
-![]({{ site.images }}image10.png)
+![]({{ site.baseurl }}/{{ site.images }}/image10.png)

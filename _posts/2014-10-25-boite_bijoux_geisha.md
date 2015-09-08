@@ -8,4 +8,4 @@ Voici ma première boîte à bijoux !!! La technique du cartonnage pour moi c’
 
 Mais pour l’instant je vous partage le look de celle là! :)
 
-![]({{ site.images }}image24.png)
+![]({{ site.baseurl }}/{{ site.images }}/image24.png)

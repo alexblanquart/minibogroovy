@@ -10,4 +10,4 @@ Le dessin Mickey je l’ai récupéré d’un tissu de la marque Disney trouvé 
 
 Voilà le résultat du petit sac école maternelle de Damian ;)
 
-![]({{ site.images }}image16.png)
+![]({{ site.baseurl }}/{{ site.images }}/image16.png)

@@ -8,4 +8,4 @@ Ce sac je l’avais fait comme cadeau d’anniversaire au petit Dinis. Il adore 
 
 Et voilà les photos du petit Dinis envoyées exclusivement du Portugal … il est mignon et ça me rend très heureuse de voir un enfant heureux de porter mes petits objets :)
 
-![]({{ site.images }}image15.png)
+![]({{ site.baseurl }}/{{ site.images }}/image15.png)

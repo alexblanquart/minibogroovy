@@ -14,9 +14,9 @@ C’est le moment de montrer les cadeaux envoyés par le père Noël à mon ento
 
 Je commence par mettre les petites pochettes maquillages faites pour la nuit de réveillon.
 
-![]({{ site.images }}lux5.png)
+![]({{ site.baseurl }}/{{ site.images }}/lux5.png)
 
-![]({{ site.images }}lux6.png)
+![]({{ site.baseurl }}/{{ site.images }}/lux6.png)
 
 Tout simple à faire il fallait:
 
@@ -30,8 +30,8 @@ Tout simple à faire il fallait:
 
 5 min à couper et 10 min à réaliser!!Il faut juste des aiguilles spéciales cuir et tadam voici le jolie résultat: :)
 
-![]({{ site.images }}pouchette-lux1.png)
+![]({{ site.baseurl }}/{{ site.images }}/pouchette-lux1.png)
 
-![]({{ site.images }}lux.png)
+![]({{ site.baseurl }}/{{ site.images }}/lux.png)
 
-![]({{ site.images }}lux3.jpeg)
+![]({{ site.baseurl }}/{{ site.images }}/lux3.jpeg)

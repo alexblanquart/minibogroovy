@@ -12,9 +12,9 @@ J’ai du improviser mes cadeaux de Noël… Milles mercis au patron cours de co
 
 Voici les jolis résultats de ma collection :)
 
-![]({{ site.images }}toto.png)
-![]({{ site.images }}toto1.png)
-![]({{ site.images }}toto4.png)
-![]({{ site.images }}toto5.png)
-![]({{ site.images }}toto6.png)
-![]({{ site.images }}toto77.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto1.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto4.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto5.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto6.png)
+![]({{ site.baseurl }}/{{ site.images }}/toto77.png)

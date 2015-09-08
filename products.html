@@ -13,7 +13,7 @@ title: Minibo - Mes créations
         {% for product in site.data.products %}
         <div id="collapse_{{ forloop.index }}" class="collapse row description">
           <div class="col-sm-6">
-            <img src="{{ site.images }}{{ product.image }}">
+            <img src="{{ site.images }}/{{ product.image }}">
           </div>
           <div class="col-sm-6">
             <button type="button" class="close" 
@@ -21,7 +21,7 @@ title: Minibo - Mes créations
               data-toggle="collapse" data-target="#collapse_{{ forloop.index }}" aria-expanded="false" aria-controls="collapse_{{ forloop.index }}"><span aria-hidden="true">&times;</span></button>
             <h3>{{ product.title }}</h3>
             <p>{{ product.description }}</p>
-            <p><a href="{{ product.post }}" class="btn btn-default" role="button">En savoir plus</a></p>
+            <p><a href="{{ site.baseurl }}{{ product.post }}" class="btn btn-default" role="button">En savoir plus</a></p>
           </div>
         </div>
         {% endfor %}
@@ -32,7 +32,7 @@ title: Minibo - Mes créations
         <div class="grid">
           {% for product in site.data.products %}
           <div class="grid-item col-sm-4">
-            <a data-toggle="collapse" href="#collapse_{{ forloop.index }}" aria-expanded="false" aria-controls="collapse_{{ forloop.index }}"><img src="{{ site.images }}{{ product.image }}" class="thumbnail"></a>
+            <a data-toggle="collapse" href="#collapse_{{ forloop.index }}" aria-expanded="false" aria-controls="collapse_{{ forloop.index }}"><img src="{{ site.images }}/{{ product.image }}" class="thumbnail"></a>
           </div>
           {% endfor %}
       </div>
