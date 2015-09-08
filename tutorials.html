@@ -1,0 +1,20 @@
+---
+layout: default
+title: Minibo - Mes tutoriels
+---
+<div class="container">
+    <div class="row">
+    	<div class="col-sm-12 text-center">
+        	<h1>Mes tutoriels</h1>
+      	</div>
+    </div>
+    <div class="row">
+    	{% for tuto in site.data.tutorials %}
+    	<div class="col-sm-6">
+    		<div class="thumnail embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="{{ tuto.video }}" allowfullscreen></iframe>
+			</div>
+    	</div>
+    	{% endfor %}
+    </div>
+</div>
