@@ -1,1 +1,1 @@
-<i class="fa fa-tag"></i> {% for tag in include.tags %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+<i class="fa fa-tag"></i> {% for tag in include.tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
