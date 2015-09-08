@@ -11,7 +11,7 @@ title: Minibo - 1OO% fait main
     <div class="row">
         {% for category in site.data.categories %}<div class="col-sm-6 col-md-4">
         	<div class="thumbnail">
-			     <img src="/images/thumbs/{{ category.image }}">
+			     <img src="{{ site.images }}{{ category.image }}">
 			     <div class="caption text-center">
 			         <h3>{{ category.title }}</h3>
 			     </div>
