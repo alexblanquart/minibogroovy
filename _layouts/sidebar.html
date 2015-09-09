@@ -8,17 +8,20 @@ layout: default
 	    </div>
 		<div class="col-sm-4"> <!-- see later to affix it -->
 		    <div class="panel panel-default">
-	  			<div class="panel-heading">Recherche</div>
-	  			<div class="panel-body">Rajouter une barre de recherche</div>
-			</div>
-			<div class="panel panel-default">
-	  			<div class="panel-heading">Articles récents</div>
+	  			<div class="panel-heading"><i class="fa fa-search fa-lg"></i> Recherche</div>
 	  			<div class="panel-body">
-	    			{% for post in site.related_posts %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
+	  				<input type="text" id="search-input">
+	  				<ul class="fa-ul" id="results-container"></ul>
 	  			</div>
 			</div>
 			<div class="panel panel-default">
-	  			<div class="panel-heading">Mots clés</div>
+	  			<div class="panel-heading"><i class="fa fa-newspaper-o fa-lg"></i> Articles récents</div>
+	  			<div class="panel-body">
+	    			{% for post in site.related_posts limit:5 %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
+	  			</div>
+			</div>
+			<div class="panel panel-default">
+	  			<div class="panel-heading"><i class="fa fa-tag fa-lg"></i> Mots clés</div>
 	  			<div class="panel-body">
 	    			{% include tags.html tags=site.data.tags %}
 	  			</div>
@@ -26,3 +29,17 @@ layout: default
 		</div>
 	</div>
 </div>
+
+<script src="{{site.baseurl}}/js/jekyll-search.min.js"></script>
+<script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><i class="fa-li fa fa-check-square"></i><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+    </script>
