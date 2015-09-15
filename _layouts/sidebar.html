@@ -1,30 +1,42 @@
 ---
 layout: default
 ---
+<div class="jumbotron banner white">
+  <div class="container">
+    <h1>Le blog</h1>
+    {% if page.tag %}
+      	<p>Articles tagués : {% include tag.html tag=page.tag %}</p>
+    {% elsif page.tags %}
+    	<p>Article : {{ page.title }} </p>	
+    {% else %}
+    	<p>Tous les articles</p>
+    {% endif %}
+  </div>
+</div>
+
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8">
 			{{ content }}
 	    </div>
 		<div class="col-sm-4"> <!-- see later to affix it -->
-		    <div class="panel panel-default">
-	  			<div class="panel-heading"><i class="fa fa-search fa-lg"></i> Recherche</div>
-	  			<div class="panel-body">
-	  				<input type="text" id="search-input" placeholder="Mot-clef, titre, date">
-	  				<ul class="fa-ul" id="results-container"></ul>
-	  			</div>
+			<div class="well">
+				{% include me.html %}
 			</div>
-			<div class="panel panel-default">
-	  			<div class="panel-heading"><i class="fa fa-newspaper-o fa-lg"></i> Articles récents</div>
-	  			<div class="panel-body">
-	    			{% for post in site.related_posts limit:5 %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
-	  			</div>
+			<div class="well">
+				<div class="input-group">
+					<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
+					<span class="input-group-addon"><i class="fa fa-search"></i></span>
+				</div>
+				<ul class="fa-ul" id="results-container"></ul>
 			</div>
-			<div class="panel panel-default">
-	  			<div class="panel-heading"><i class="fa fa-tag fa-lg"></i> Mots clés</div>
-	  			<div class="panel-body">
-	    			{% include tags.html tags=site.data.tags %}
-	  			</div>
+			<div class="well">
+				<p><strong>Articles récents</strong></p>
+				{% for post in site.posts limit:5 %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
+			</div>
+			<div class="well">
+	  			<p><strong>Mots clés</strong></p>
+	    		{% include tags.html tags=site.data.tags %}
 			</div>
 		</div>
 	</div>

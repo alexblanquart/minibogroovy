@@ -4,9 +4,9 @@ title: Une idée géniale !! :) Petite pochette enveloppe
 tags: pochette idee
 image: pouchette8.png
 ---
-Alors, que n’avais pas beaucoup de temps pour finir mes cadeaux de Noël, puisque ma machine à coudre à dû repartir pour le SAV!!!
+Alors, que je n’avais pas beaucoup de temps pour finir mes cadeaux de Noël, puisque ma machine à coudre à dû repartir pour le SAV!!!
 
-J’ai utilisé un patron du cours de couture japonaise auquel je suis inscrite, j’ai juste changer le format de la pochette !!
+J’ai utilisé un patron du cours de couture japonaise auquel je suis inscrite, j’ai juste changé le format de la pochette !!
 
 Voici le modèle fait au cours:
 

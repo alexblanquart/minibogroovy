@@ -1,5 +1,5 @@
 <header>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 	        <div class="navbar-header">
@@ -18,7 +18,7 @@
 	        <div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{site.baseurl}}/">Accueil</a></li>
-					<li class="{% if page.url == '/blog/index.html' %}active{% endif %}"><a href="{{site.baseurl}}/blog/index.html">Blog</a></li>
+					<li class="{% if page.url == '/blog/index.html' or page.url contains 'tag' %}active{% endif %}"><a href="{{site.baseurl}}/blog/index.html">Blog</a></li>
 					<li class="{% if page.url == '/products.html' %}active{% endif %}"><a href="{{site.baseurl}}/products.html">Mes créations</a></li>
 					<li class="{% if page.url == '/tutorials.html' %}active{% endif %}"><a href="{{site.baseurl}}/tutorials.html">Mes tutoriels</a></li>
 					<li class="{% if page.url == '/about.html' %}active{% endif %}"><a href="{{site.baseurl}}/about.html">A propos</a></li>

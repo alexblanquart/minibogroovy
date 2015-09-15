@@ -1,15 +1,6 @@
 ---
 layout: sidebar
-title: Le blog
 ---
-<div class="row">
-  <div class="col-sm-12 text-center">
-    <h1>Le blog</h1>
-    {% if page.tag %}
-      <p><i class="fa fa-tag"></i> {{ page.tag }}</p>
-    {% endif %}
-  </div>
-</div>
 <div class="row">
   <div class="col-sm-12">
     <div class="grid">
@@ -24,7 +15,7 @@ title: Le blog
       {% for post in posts %}
         <div class="grid-item col-sm-6">
           <div class="thumbnail text-center">
-            <a href="{{ site.baseurl }}/{{ post.url }}"><img src="{{ site.baseurl }}/{{ site.images }}/{{ post.image }}"></a>
+            <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/{{ site.images }}/{{ post.image }}"></a>
             <div class="caption">
               <h3>{{ post.title }}</h3>
               <p>{% include date.html date=post.date %}</p>

@@ -4,10 +4,19 @@ html {
   min-height: 100%;
 }
 
+body {
+  margin-bottom: 100px;
+}
+
 footer {
 	position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+/******* Colors ********/
+.white {
+  color: white;
 }
 
 /******* Paragraph larger ********/
@@ -15,28 +24,29 @@ p {
    font-size: 16px;
 }
 
+/******* Banner *********/
+.banner {
+  background: transparent no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-image: url('/images/home-bg.jpg');
+}
+
 /******* Footer stands clearer *********/
 footer {
   background-color: #f5f5f5;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 /******* Incorporation of the logo inside navbar *********/
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-nav {
-  padding-top: 30px; /* make navbar links on the same line with brand image */
-}
-
-.navbar-brand img {
-  height: 70px; /* resize brand image to be smaller than the real one */
-}
-
-.navbar-brand {
-  height: auto; /* make brand image stay inside navbar */
-}
-
-/******* Some space between sections *********/
-section {
-  padding: 100px 0px;
+  padding-top: 15px; /* make navbar links on the same line with brand image */
 }
 
 /******* Get rid of borders *********/
@@ -44,26 +54,13 @@ section {
   /*border: none;*/
 }
 .panel {
-  /*border: none;*/
+  /*border: none;
+  box-shadow: none;*/
 }
 
 /******* Options for masonry *********/
 .grid-item {
   margin: 0px;
-}
-
-/******* Center caption of grid item on the image *********/
-/* TODO see later to make caption vertically align */
-.grid-item {
-  /*position: relative;*/
-}
-.grid-item .caption {
-  /*position: absolute;
-  top: 40%;
-  width: 100%;*/
-}
-.grid-item .caption h4{
-  /*color: #ffffff;*/
 }
 
 /******* Social (see http://www.himpfen.com/social-sharing-buttons-bootstrap-font-awesome/) *********/
@@ -90,4 +87,25 @@ section {
 .btn-facebook:active, .btn-facebook:hover {
     background: #30477a;
     color: #fff
+}
+
+/******** Badges *********/
+.badge-danger {
+  background-color: #d43f3a;
+}
+
+.badge-warning {
+  background-color: #d58512;
+}
+
+.badge-success {
+  background-color: #398439;
+}
+
+.badge-info {
+  background-color: #269abc;
+}
+
+.badge-inverse {
+  background-color: #333333;
 }
