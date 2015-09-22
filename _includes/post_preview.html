@@ -1,0 +1,9 @@
+<div class="thumbnail text-center">
+	<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/{{ site.images }}/{{ post.image }}"></a>
+	<div class="caption">
+		<h3>{{ post.title }}</h3>
+		<p>{{ post.excerpt }}</p>
+		<p><em>{% include date.html date=post.date %}</em></p>
+		<p><a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-default" role="button">En savoir plus</a></p>
+	</div>
+</div>
