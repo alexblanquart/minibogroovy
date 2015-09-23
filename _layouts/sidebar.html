@@ -2,23 +2,25 @@
 layout: default
 ---
 <style>
-	.banner {
-		background-image: url('{{ site.baseurl }}/{{ site.images }}/blog_bg_10.jpeg'); /* to get images location right */
+	.bg-image {
+		background-image: url('{{ site.baseurl }}/{{ site.images }}/blog_bg.jpg'); /* to get images location right */
 	}
 </style>
 
-<div class="jumbotron banner white">
-  <div class="container">
-    <h1>Le blog</h1>
-    {% if page.tag %}
-      	<p>Articles tagués : {% include tag.html tag=page.tag %}</p>
-    {% elsif page.tags %}
-    	<p>Article : {{ page.title }} </p>	
-    {% else %}
-    	<p>Tous les articles</p>
-    {% endif %}
-  </div>
-</div>
+<header class="bg-image">
+	<div class="jumbotron bg-transparent white">
+	  <div class="container">
+	    <h1>Le blog</h1>
+	    {% if page.tag %}
+	      	<h3>Articles tagués : {% include tag.html tag=page.tag %}</h3>
+	    {% elsif page.tags %}
+	    	<h3>Article : {{ page.title }}</h3>	
+	    {% else %}
+	    	<h3>Tous les articles</h3>
+	    {% endif %}
+	  </div>
+	</div>
+</header>
 
 <div class="container">
 	<div class="row">
@@ -26,23 +28,31 @@ layout: default
 			{{ content }}
 	    </div>
 		<div class="col-sm-3"> <!-- see later to affix it -->
-			<div class="well">
-				{% include me.html %}
-			</div>
-			<div class="well">
-				<div class="input-group">
-					<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
-					<span class="input-group-addon"><i class="fa fa-search"></i></span>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					{% include me.html %}
 				</div>
-				<ul class="fa-ul" id="results-container"></ul>
 			</div>
-			<div class="well">
-				<p><strong>Articles récents</strong></p>
-				{% for post in site.posts limit:5 %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<div class="input-group">
+						<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+					</div>
+					<ul class="fa-ul" id="results-container"></ul>
+				</div>
 			</div>
-			<div class="well">
-	  			<p><strong>Mots clés</strong></p>
-	    		{% include tags.html tags=site.data.tags %}
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<p><strong>Articles récents</strong></p>
+					{% for post in site.posts limit:5 %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>{% endfor %}
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+	  				<p><strong>Mots clés</strong></p>
+	    			<p>{% include tags.html tags=site.data.tags %}</p>
+				</div>
 			</div>
 		</div>
 	</div>
