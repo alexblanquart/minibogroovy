@@ -17,8 +17,8 @@ layout: sidebar
           <div class="thumbnail text-center">
             <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl }}/{{ site.images }}/{{ post.image }}" class="img-responsive"></a>
             <div class="caption">
-              <h2 class="post-title">{{ post.title }}</h2>
-              <p>{{ post.excerpt }}</p>
+              <h2 class="title">{{ post.title }}</h2>
+              <p>{{ post.excerpt | strip_html }}</p>
               <p class="text-muted"><em>{% include date.html date=post.date %}</em></p>
               <p><a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-default btn-sm" role="button">En savoir plus</a></p>
             </div>

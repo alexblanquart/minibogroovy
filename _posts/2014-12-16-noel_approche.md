@@ -2,7 +2,7 @@
 layout: post
 title: Oh Oh OH Noël Approche!
 tags: noel
-image: p1180978.png
+image: p1180978.jpg
 ---
 ça fait déjà quelques temps que je ne publie pas ! par manque de temps mais aussi parce que toutes mes petites créations seront de futurs cadeaux de Noël!!
 
@@ -18,9 +18,9 @@ Je l’ai fait pour la petite Gabrielle de 2 ans! J’espère qu’elle sera heu
 
 Je vous laisse un coup d’oeil , J’attendrai les photos avec impatience de la petite Gabrielle :)
 
-![]({{ site.baseurl }}/{{ site.images }}/p1180978.png)
-![]({{ site.baseurl }}/{{ site.images }}/p1180974.png)
-![]({{ site.baseurl }}/{{ site.images }}/p1180979.png)
-![]({{ site.baseurl }}/{{ site.images }}/p1180992.png)
-![]({{ site.baseurl }}/{{ site.images }}/p1180993.png)
+![]({{ site.baseurl }}/{{ site.images }}/p1180978.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/p1180974.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/p1180979.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/p1180992.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/p1180993.jpg)
 

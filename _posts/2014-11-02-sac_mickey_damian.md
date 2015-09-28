@@ -2,7 +2,7 @@
 layout: post
 title: Sac mickey pour Damian
 tags: sac mickey
-image: image16.png
+image: image16.jpg
 ---
 Aujourd’hui je vous parle du sac de Damian, ce sac il a été conçu pour le filleul de ma copine. Il est fan de Cars et de Mickey, donc j’ai fait un sac Mickey !!
 
@@ -10,4 +10,4 @@ Le dessin Mickey je l’ai récupéré d’un tissu de la marque Disney trouvé 
 
 Voilà le résultat du petit sac école maternelle de Damian ;)
 
-![]({{ site.baseurl }}/{{ site.images }}/image16.png)
+![]({{ site.baseurl }}/{{ site.images }}/image16.jpg)

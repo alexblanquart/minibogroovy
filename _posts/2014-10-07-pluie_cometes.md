@@ -2,9 +2,9 @@
 layout: post
 title: La pluie de comètes
 tags: pluie astronomie arts-plastiques
-image: la-pluie-de-cometes.png
+image: la-pluie-de-cometes.jpg
 ---
-![]({{ site.baseurl }}/{{ site.images }}/la-pluie-de-cometes.png)
+![]({{ site.baseurl }}/{{ site.images }}/la-pluie-de-cometes.jpg)
 
 Coucou les amis voici un tableau que j’ai offert à ma belle mère, elle est fan du noir, de tout ce qui est moderne, abstrait … j’ai donc fait «la pluie de comètes» …
 

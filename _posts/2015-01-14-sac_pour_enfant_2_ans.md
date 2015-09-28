@@ -2,7 +2,7 @@
 layout: post
 title: Sac pour enfants de 2 ans!
 tags: sac princesse
-image: sac.png
+image: sac.jpg
 ---
 Aujourd’hui je vous montre mon nouveau sac fait pour la petite cousine de mon fils Charlie (toujours les mêmes patrons que les autres de cette gamme) , mais un peu transformé.
 
@@ -10,8 +10,8 @@ J’ai utilisé pour la première fois la technique du transfert.. j’ai achet�
 
 Pour mon première c’est pas mal l’effet non ? Qu’en penses-vous?
 
-![]({{ site.baseurl }}/{{ site.images }}/sac.png)
-![]({{ site.baseurl }}/{{ site.images }}/sac2.png)
-![]({{ site.baseurl }}/{{ site.images }}/sac3.png)
-![]({{ site.baseurl }}/{{ site.images }}/sac44.png)
-![]({{ site.baseurl }}/{{ site.images }}/sac1.png)
+![]({{ site.baseurl }}/{{ site.images }}/sac.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/sac2.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/sac3.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/sac44.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/sac1.jpg)

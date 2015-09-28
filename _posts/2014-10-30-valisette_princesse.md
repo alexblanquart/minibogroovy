@@ -2,7 +2,7 @@
 layout: post
 title: Valisette princesse pour une princesse! ;)
 tags: valisette princesse
-image: img_2201.png
+image: img_2201.jpg
 ---
 Pour cette valisette, le dessin de la petite fée a été fait et cousu à la main!!! Beaucoup de boulot, c'était ma deuxième boite que je faisais à la main mais l’effet est très joli…
 
@@ -10,4 +10,4 @@ J’ai été inspiré des histoires d’illustratrice Carla Antunes, j’adore s
 
 Et voilà avec de l’amour et un peu de tissus tout doux la petite valisette princesse est née :)
 
-![]({{ site.baseurl }}/{{ site.images }}/img_2201.png)
+![]({{ site.baseurl }}/{{ site.images }}/img_2201.jpg)

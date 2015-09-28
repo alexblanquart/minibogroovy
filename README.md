@@ -20,10 +20,11 @@ We aim at getting:
 - infinite scroll for products
 - google analytics
 - missing images for posts, reread all posts
-- markdown github and images links
 - tutorial for non tech on how to use and integrate new content
 - software or tools to improve the content integration
 - search over other things than posts
 - inform readers when new content (post for example) is ready : newsletter? facebook?
+- make products, tutorials, tags collections?
+- image displayed as exceprt ?!
 
 

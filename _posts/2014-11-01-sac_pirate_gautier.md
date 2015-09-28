@@ -2,7 +2,7 @@
 layout: post
 title: Sac pirate pour porter le doudou de mon fils Gautier
 tags: sac pirate doudou
-image: image17.png
+image: image17.jpg
 ---
 Je vous présente le sac de mon fils Gautier, je l’ai fait la nuit avant de partir en vacances au Portugal !!! :D
 
@@ -12,4 +12,4 @@ En fait je n’avais pas de tissu aux rayures blanches et bleues et du coup j’
 
 Mon fils adore ce sac, même aujourd’hui (1 an après il le porte partout puisqu’il adore enfilé son doudou dans la pochette devant !!!!
 
-![]({{ site.baseurl }}/{{ site.images }}/image17.png)
+![]({{ site.baseurl }}/{{ site.images }}/image17.jpg)

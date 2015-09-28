@@ -2,13 +2,13 @@
 layout: post
 title: Sac maternité, tapis à langer et porte-clefs petit lapin
 tags: sac maternite tapis porte-clefs
-image: image18.png
+image: image18.jpg
 ---
 Aujourd’hui je vous montre un des mes préférés….l’ensemble sac à maternité +tapis à langer et le petit porte clé lapin ;)))
 
 Je vous avoue que j’ai un peu galéré pour dessiner et trouver les bonnes mesures de mon sac ! J’ai acheté le livre de Lisa Lam : The bag Making Bible qui m’a aidé à comprendre comment faire les poches de mon joli sac :)!
 
-![]({{ site.baseurl }}/{{ site.images }}/capture-d_c3a9cran-2014-10-28-c3a0-21-57-47.png)
+![]({{ site.baseurl }}/{{ site.images }}/capture-d_c3a9cran-2014-10-28-c3a0-21-57-47.jpg)
 
 Elle explique très bien toutes les techniques requises pour créer vos patrons et faire vos propres sacs !
 
@@ -22,4 +22,4 @@ Une toute vielle qui ne marche plus, j’ai pris 1 semaine, j’ai démontée la
 
 Je l’ai encore et je m’en sers en cas dépannage !!
 
-![]({{ site.baseurl }}/{{ site.images }}/image18.png)
+![]({{ site.baseurl }}/{{ site.images }}/image18.jpg)

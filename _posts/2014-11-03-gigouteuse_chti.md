@@ -2,7 +2,7 @@
 layout: post
 title: Gigoteuse de ch’ti (il drache) - taille 6 à 18 mois
 tags: gigoteuse chti pluie
-image: image19.png
+image: image19.jpg
 ---
 Cette gigoteuse (taille 6 mois à 18 mois),  je l’ai faite pour mon fils Arthur, j’ai pris un modèle de gigoteuse Vertbaudet de mon ainé Gautier et j’ai tracé, coupé et up up up au travail.
 
@@ -12,5 +12,5 @@ J’ai pris un dessin des pingouins récupérés sur internet, car quand je l’
 
 L’effet est joli, pour ma première pièce vêtement je suis bien contente, ça va non ?
 
-![]({{ site.baseurl }}/{{ site.images }}/image19.png)
+![]({{ site.baseurl }}/{{ site.images }}/image19.jpg)
 

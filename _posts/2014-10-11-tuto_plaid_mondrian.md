@@ -2,7 +2,7 @@
 layout: post
 title: Tuto Plaid Mondrian tout doux
 tags: mondrian plaid doux
-image: image6.png
+image: image6.jpg
 ---
 Coucou les amis, je vous montre mon plaid Mondrian! J’en ai bavéééé pour le faire!!!!!
 
@@ -12,6 +12,6 @@ Je l’ai offert l’année dernière à Noel à ma belle mère, elle est fan de
 
 Donc je vous propose de découvrir le tutoriel :) (Voir Catégorie Conditions d’utilisation de ce Blog.)
 
-![]({{ site.baseurl }}/{{ site.images }}/tuto-mondrian1.png)
-![]({{ site.baseurl }}/{{ site.images }}/tuto-mondrian2.png)
-![]({{ site.baseurl }}/{{ site.images }}/image6.png)
+![]({{ site.baseurl }}/{{ site.images }}/tuto-mondrian1.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/tuto-mondrian2.jpg)
+![]({{ site.baseurl }}/{{ site.images }}/image6.jpg)

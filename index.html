@@ -2,20 +2,68 @@
 layout: default
 title: 1OO% fait main
 ---
+<style>
+    .bg-image {
+        background-image: url('{{ site.baseurl }}/{{ site.images }}/accueil.png'); 
+        height: 200px;
+    }
+</style>
+
+<header class="bg-image">
+    <div class="jumbotron bg-transparent white">
+      <div class="container">
+        <!--<h1>Les aventures créatives de Minibo</h1>-->
+      </div>
+    </div>
+</header>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h1>Catégories</h1>
+            <h1 class="title">Derniers articles</h1>
         </div>
     </div>
     <div class="row">
-        {% for category in site.data.categories %}<div class="col-sm-6 col-md-4">
+        {% for post in site.posts limit:4%}<div class="col-sm-3">
         	<div class="thumbnail">
-			     <img src="{{ site.images }}/{{ category.image }}">
+			     <img src="{{ site.images }}/{{ post.image }}">
 			     <div class="caption text-center">
-			         <h3>{{ category.title }}</h3>
+			         <h3>{{ post.title }}</h3>
 			     </div>
 			 </div>
+        </div>{% endfor %}
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 class="title">Dernières créations</h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for product in site.data.products limit:4%}<div class="col-sm-3">
+            <div class="thumbnail">
+                 <img src="{{ site.images }}/{{ product.image }}">
+                 <div class="caption text-center">
+                     <h3>{{ product.title }}</h3>
+                 </div>
+             </div>
+        </div>{% endfor %}
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 class="title">Derniers tutoriels</h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for tuto in site.data.tutorials limit:4%}<div class="col-sm-3">
+            <div class="thumnail embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="{{ tuto.video }}" allowfullscreen></iframe>
+            </div>
         </div>{% endfor %}
     </div>
 </div>
