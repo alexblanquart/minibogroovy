@@ -3,24 +3,25 @@ layout: default
 title: 1OO% fait main
 ---
 <style>
-    .bg-image {
-        background-image: url('{{ site.baseurl }}/{{ site.images }}/accueil.png'); 
-        height: 200px;
+    .jumbotron img {
+        height: 100%;
+        width: 100%;
     }
 </style>
 
-<header class="bg-image">
-    <div class="jumbotron bg-transparent white">
-      <div class="container">
-        <!--<h1>Les aventures créatives de Minibo</h1>-->
-      </div>
+<header>
+    <div class="jumbotron">
+        <div class="container">
+            <img src="{{ site.baseurl }}/{{ site.images }}/accueil.png"/>
+        </div>
     </div>
 </header>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h1 class="title">Derniers articles</h1>
+            <img class="img-responsive" src="{{ site.baseurl }}/{{ site.images }}/articles_blog.png"/>
+            <!--<h1 class="title">Derniers articles</h1>-- -->
         </div>
     </div>
     <div class="row">
@@ -38,7 +39,8 @@ title: 1OO% fait main
 <div class="container">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h1 class="title">Dernières créations</h1>
+            <img class="img-responsive" src="{{ site.baseurl }}/{{ site.images }}/idees_creatis_a_refaire.png"/>
+            <!--<h1 class="title">Dernières créations</h1>-->
         </div>
     </div>
     <div class="row">

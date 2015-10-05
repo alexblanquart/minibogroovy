@@ -2,6 +2,16 @@
 layout: default
 title: Mes créations
 ---
+<style>
+    .bg-image {
+        background-image: url('{{ site.baseurl }}/{{ site.images }}/banner1.png'); 
+        height: 400px;
+    }
+</style>
+
+<header class="bg-image">
+    
+</header>
 <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
@@ -21,7 +31,7 @@ title: Mes créations
               data-toggle="collapse" data-target="#collapse_{{ forloop.index }}" aria-expanded="false" aria-controls="collapse_{{ forloop.index }}"><span aria-hidden="true">&times;</span></button>
             <h3>{{ product.title }}</h3>
             <p>{{ product.description }}</p>
-            <p><a href="{{ site.baseurl }}/{{ product.post }}" class="btn btn-default" role="button">En savoir plus</a></p>
+            <p><a href="{{ site.baseurl }}/{{ product.post }}" class="btn btn-default" role="button">Lire la suite</a></p>
           </div>
         </div>
         {% endfor %}

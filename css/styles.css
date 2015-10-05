@@ -24,9 +24,25 @@ p {
    font-size: 14px;
 }
 
+/******* fonts ********/
+@font-face {
+ font-family: "ClaireHand";
+ src: url('./fonts/ClaireHandRegular.ttf');
+}
+@font-face {
+ font-family: "ink";
+ src: url('./fonts/Ink Blossoms.ttf');
+}
+
 /******* Text styles ******/
+.nav li a {
+  font: 16px/20px "ink","ClaireHand",Arial,Helvetica,sans-serif;
+  color: #000000;
+}
+
 .title {
-    font-family: "Shadows Into Light";
+    /*font-family: "Shadows Into Light";*/
+    font-family: "ink";
     color: #389E9E !important;
     /*font-size: 34px;*/
     font-weight: normal !important;
@@ -43,9 +59,9 @@ body {
 /******* Backgrounds *********/
 .bg-image {
   background: no-repeat center center;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
 }
 
