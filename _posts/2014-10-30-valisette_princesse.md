@@ -10,4 +10,4 @@ J’ai été inspiré des histoires d’illustratrice Carla Antunes, j’adore s
 
 Et voilà avec de l’amour et un peu de tissus tout doux la petite valisette princesse est née :)
 
-![]({{ site.baseurl }}/{{ site.images }}/img_2201.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/img_2201.jpg)

@@ -1,6 +1,7 @@
 title: Minibo
 baseurl: /minibo
 images:	images
+posts_images: images/posts
 url: http://alexblanquart.github.io/minibo
 
 paginate: 5

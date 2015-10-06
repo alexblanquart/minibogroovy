@@ -27,4 +27,7 @@ We aim at getting:
 - make products, tutorials, tags collections?
 - image displayed as exceprt ?!
 
+# Bash commands which can be useful
 
+$ find . -type f -name "*.md" -print | xargs sed -i -e 's/{{ site.posts_images }}/{{ site.baseurl }}\/{{ site.posts_images }}/g'
+$ sips --resampleWidth 340 *.jpg *.png

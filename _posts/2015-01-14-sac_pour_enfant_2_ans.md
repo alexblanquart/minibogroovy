@@ -10,8 +10,8 @@ J’ai utilisé pour la première fois la technique du transfert.. j’ai achet�
 
 Pour mon première c’est pas mal l’effet non ? Qu’en penses-vous?
 
-![]({{ site.baseurl }}/{{ site.images }}/sac.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/sac2.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/sac3.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/sac44.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/sac1.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/sac.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/sac2.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/sac3.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/sac44.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/sac1.jpg)

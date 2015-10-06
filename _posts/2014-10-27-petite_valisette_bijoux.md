@@ -6,6 +6,6 @@ image: image20.jpg
 ---
 Voici une autre œuvre cartonnage, j’adore les petits chats et l’effet est magnifique non ? Qu‘en pensez vous ?
 
-![]({{ site.baseurl }}/{{ site.images }}/image20.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/image20.jpg)
 
 

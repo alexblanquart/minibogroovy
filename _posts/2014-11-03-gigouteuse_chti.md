@@ -12,5 +12,5 @@ J’ai pris un dessin des pingouins récupérés sur internet, car quand je l’
 
 L’effet est joli, pour ma première pièce vêtement je suis bien contente, ça va non ?
 
-![]({{ site.baseurl }}/{{ site.images }}/image19.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/image19.jpg)
 

@@ -10,11 +10,11 @@ J’ai utilisé un patron du cours de couture japonaise auquel je suis inscrite,
 
 Voici le modèle fait au cours:
 
-![]({{ site.baseurl }}/{{ site.images }}/pouchette8.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/pouchette6.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/pouchette8.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/pouchette6.jpg)
 
 Et voici le modèle transformé. Je l’ai offert aux plus jeunes avec des petites surprises dedans: soit des bijoux, soit un foulard! le succès a été imminent :)
 
-![]({{ site.baseurl }}/{{ site.images }}/pouchette.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/pouchette444.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/pouchette5.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/pouchette.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/pouchette444.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/pouchette5.jpg)

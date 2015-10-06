@@ -18,9 +18,9 @@ Je l’ai fait pour la petite Gabrielle de 2 ans! J’espère qu’elle sera heu
 
 Je vous laisse un coup d’oeil , J’attendrai les photos avec impatience de la petite Gabrielle :)
 
-![]({{ site.baseurl }}/{{ site.images }}/p1180978.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/p1180974.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/p1180979.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/p1180992.jpg)
-![]({{ site.baseurl }}/{{ site.images }}/p1180993.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/p1180978.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/p1180974.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/p1180979.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/p1180992.jpg)
+![]({{ site.baseurl }}/{{ site.posts_images }}/p1180993.jpg)
 
