@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default withoutborder">
 	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-				<img class="img-responsive" src="{{ site.baseurl }}/{{ site.images }}/logo.png" style="max-width: 30%;">
+				<img src="{{ site.baseurl }}/{{ site.images }}/banners/logo.png">
 			</a>
         </div>
 
@@ -18,8 +18,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{site.baseurl}}/">Accueil</a></li>
 				<li class="{% if page.url == '/blog/index.html' or page.url contains 'tag' %}active{% endif %}"><a href="{{site.baseurl}}/blog/index.html">Blog</a></li>
-				<li class="{% if page.url == '/products.html' %}active{% endif %}"><a href="{{site.baseurl}}/products.html">Mes créations</a></li>
-				<li class="{% if page.url == '/tutorials.html' %}active{% endif %}"><a href="{{site.baseurl}}/tutorials.html">Mes tutoriels</a></li>
+				<li class="{% if page.url == '/creative_ideas.html' %}active{% endif %}"><a href="{{site.baseurl}}/creative_ideas.html">Idées créatives</a></li>
+				<li class="{% if page.url == '/with_friends.html' %}active{% endif %}"><a href="{{site.baseurl}}/with_friends.html">Ateliers</a></li>
 				<li class="{% if page.url == '/about.html' %}active{% endif %}"><a href="{{site.baseurl}}/about.html">A propos</a></li>
 			</ul>
 		</div>
