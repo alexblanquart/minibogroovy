@@ -8,16 +8,11 @@ We aim at getting:
 - DIY logo
 - social links to facebook, pinterest, and social shares to facebook, twitter, pinterest, instagram, google+
 - rename images for better coherence
-- better visual: fonts, color, etc. (depoisdosquinze.com, chezsusan.ch)
 - domain name
 - disqus integration
-- links between posts and other data
-- products description
 - categories ?
-- index page with news, products and tutorials
 - posts by date
 - responsive
-- infinite scroll for products
 - google analytics
 - missing images for posts, reread all posts
 - tutorial for non tech on how to use and integrate new content
@@ -29,6 +24,10 @@ We aim at getting:
 - SEO
 - affix aside blog
 - sitemap
+- rewrite images from original to compressed nothing more
+- current page with underline on navigation
+- infinite scrolling
+- research
 
 # Bash commands which can be useful
 

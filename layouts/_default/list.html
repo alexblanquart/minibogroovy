@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+{{ partial "navigation.html" . }}
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="grid">
+			{{ range .Data.Pages }}
+		        <div class="grid-item col-sm-4">
+		        	<div class="thumbnail text-center">
+		            	<a href="{{ .Permalink }}"><img src="/images/posts/{{ .Params.image }}" class="img-responsive"></a>
+		            	<div class="caption">
+		              		<h2 class="title">{{ .Title }}</h2>
+		              		<p>{{ .Summary }}</p>
+		              		<p class="text-muted"><em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
+		              		<p><a href="{{ .Permalink }}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
+		            	</div>
+		          	</div>
+		        </div>
+		      {{ end }}
+		    </div>
+		</div>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+
+</body>
+</html>

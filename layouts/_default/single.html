@@ -10,7 +10,25 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-9">
-			{{ .Content }}
+			<div class="row">
+			    <div class="col-sm-12">
+			   		<h1 class="title">{{ .Title }}</h1>
+			        <ul class="list-inline">
+			            <li><p class="text-muted"><em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p></li>
+			            <li><p>{{ range .Params.tags }}{{ partial "tag.html" . }}{{ end }}</p></li>
+			        </ul>
+			    </div>
+			</div>
+			<div class="row">
+			 	<div class="col-sm-12">
+					<i class="fa fa-quote-left fa-3x fa-pull-left"></i>{{ .Content }}
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p>{{ partial "share.html" . }}</p>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-3">
 			<div class="panel panel-default">
@@ -30,7 +48,7 @@
 			<div class="panel panel-default">
   				<div class="panel-body">
 					<p><strong>Articles récents</strong></p>
-					{{ range first 5 .Data.Pages }}
+					{{ range first 5 .Site.Pages }}
         				<p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
     				{{ end }}
 				</div>
@@ -38,9 +56,7 @@
 			<div class="panel panel-default">
   				<div class="panel-body">
 	  				<p><strong>Mots clés</strong></p>
-	  				<p>{{ range .Params.tags }}
-	  					<a href="/tags/{{ . | urlize }}"><span class="label label-info">{{ . }}</span></a>
-          			{{ end }}</p>
+	  				<p>{{ range $name, $taxonomy := .Site.Taxonomies.tags }}{{ partial "tag.html" $name }}{{ end }}</p>
 				</div>
 			</div>
 		</div>
