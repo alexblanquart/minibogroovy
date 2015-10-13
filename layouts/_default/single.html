@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+{{ partial "navigation.html" . }}
+<div class="container banner-blog">
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			{{ .Content }}
+		</div>
+		<div class="col-sm-3">
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					{{ partial "me.html" . }}
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<div class="input-group">
+						<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+					</div>
+					<ul class="fa-ul" id="results-container"></ul>
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<p><strong>Articles récents</strong></p>
+					{{ range first 5 .Data.Pages }}
+        				<p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    				{{ end }}
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+	  				<p><strong>Mots clés</strong></p>
+	  				<p>{{ range .Params.tags }}
+	  					<a href="/tags/{{ . | urlize }}"><span class="label label-info">{{ . }}</span></a>
+          			{{ end }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{ partial "disqus.html" . }}
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+
+</body>
+</html>
