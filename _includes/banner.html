@@ -1,0 +1,12 @@
+<style>
+	.banner {
+		background-image:
+			{% for img in page.banner_images %}
+				url("{{ site.baseurl }}/{{ site.images }}/banners/{{ img }}")
+				{% unless forloop.last %}, {% endunless %}
+			{% endfor %};
+	}
+</style>
+
+<div class="banner">
+</div>

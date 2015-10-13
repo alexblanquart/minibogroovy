@@ -40,6 +40,17 @@ p {
   color: #000000;
 }
 
+.nav > .active > a {
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:0px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #FF9999;
+  color: #000 !important;
+  background-color: transparent !important;
+}
+
 .title {
     /*font-family: "Shadows Into Light";*/
     font-family: "ink";
@@ -69,6 +80,19 @@ body {
   background: transparent;
 }
 
+/******* Banners ************/
+.banner {
+  width: auto;
+  height: 250px;
+  z-index: -1;
+  background-size:contain;
+  background: no-repeat center center;
+  opacity: 0.9;
+}
+
+
+
+
 /******* Footer stands clearer *********/
 footer {
   background-color: #f5f5f5;
@@ -78,10 +102,11 @@ footer {
 /******* Incorporation of the logo inside navbar *********/
 .navbar {
   margin-bottom: 0;
+  background-color: transparent; /* for the moment but will be another color */
 }
 
 .navbar-nav {
-  padding-top: 15px; /* make navbar links on the same line with brand image */
+  /*padding-top: 15px; /* make navbar links on the same line with brand image */
 }
 
 /******* Get rid of borders *********/
@@ -93,6 +118,12 @@ footer {
 /******* Options for masonry *********/
 .grid-item {
   margin: 0px;
+}
+
+/******* Social ********/
+.no_highlight { /* link without the blue color */
+  color: inherit; 
+  text-decoration: none;
 }
 
 /******* Custom buttons ******/
@@ -114,7 +145,7 @@ footer {
 }
 
 /******* Social (see http://www.himpfen.com/social-sharing-buttons-bootstrap-font-awesome/) *********/
-.btn-twitter {
+/*.btn-twitter {
     background: #00acee;
     border-radius: 0;
     color: #fff
@@ -137,4 +168,4 @@ footer {
 .btn-facebook:active, .btn-facebook:hover {
     background: #30477a;
     color: #fff
-}
+}*/
