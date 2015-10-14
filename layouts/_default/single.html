@@ -4,8 +4,7 @@
 
 <body>
 {{ partial "navigation.html" . }}
-<div class="container banner-blog">
-</div>
+<div class="banner-{{ index .Params.categories 0}}"></div>
 
 <div class="container">
 	<div class="row">

@@ -28,6 +28,7 @@ We aim at getting:
 - current page with underline on navigation
 - infinite scrolling
 - research
+- date in footer
 
 # Bash commands which can be useful
 
