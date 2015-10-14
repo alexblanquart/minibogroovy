@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+{{ partial "navigation.html" . }}
+<div class="banner banner-about"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			{{ .Content }}
+		</div>
+		<div class="col-sm-6">
+      		{{ partial "me.html" . }}
+		</div>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
+
+</body>
+</html>

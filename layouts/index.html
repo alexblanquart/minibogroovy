@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+{{ partial "navigation.html" . }}
+<div class="container-fluid">
+	<div class="jumbotron bg-accueil"></div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row">
+			{{ range .Site.Taxonomies.categories.blog }}
+		        <div class="col-sm-4">
+		        	<div class="thumbnail text-center no-overflow">
+		            	<a href="{{ .Page.Permalink }}"><img src="/images/posts/{{ .Page.Params.image }}" class="img-responsive"></a>
+		            	<div class="caption">
+		              		<h2 class="title">{{ .Page.Title }}</h2>
+		              		<p>{{ .Page.Summary }}</p>
+		              		<p class="text-muted"><em>{{ .Page.Date.Format "Jan 2, 2006" }}</em></p>
+		              		<p><a href="{{ .Page.Permalink }}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
+		            	</div>
+		          	</div>
+		        </div>
+		    {{ end }}
+		    </div>
+		</div>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
+
+</body>
+</html>

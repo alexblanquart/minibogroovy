@@ -4,7 +4,7 @@
 
 <body>
 {{ partial "navigation.html" . }}
-<div class="banner-{{lower .Title}}"></div>
+<div class="banner banner-{{lower .Title}}"></div>
 
 <div class="container">
 	<div class="row">
@@ -17,7 +17,7 @@
 		            	<div class="caption">
 		              		<h2 class="title">{{ .Title }}</h2>
 		              		<p>{{ .Summary }}</p>
-		              		<p class="text-muted"><em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
+		              		<p class="text-muted"><em>{{ .Date.Format "Jan 2, 2006" }}</em></p>
 		              		<p><a href="{{ .Permalink }}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
 		            	</div>
 		          	</div>
