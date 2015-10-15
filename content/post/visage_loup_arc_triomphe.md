@@ -1,8 +1,8 @@
 +++
-date = "2014-10-03T14:50:59+02:00"
+date = "2014-10-03"
 draft = true
 title = "« le visage », le loup » et « l’arc de triomphe »"
-image = "image10.png" 
+image = "image10.jpg" 
 tags = ["blog", "visage", "animaux", "peinture", "arts-plastiques"]
 
 +++
@@ -15,4 +15,4 @@ Je vois de vieux messieurs, un loup et l’arc de triomphe inversés!!
 
 C’est génial ce que l’on peut faire sans vraiment réfléchir … ;)
 
-{{% img src="image10.png" %}}
+{{% img src="image10.jpg" %}}
