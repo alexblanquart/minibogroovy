@@ -15,56 +15,14 @@ footer {
   height: 100px;
 }
 
+/******* Logo ********/
+#logo {
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+  transform: rotate(-10deg);
 
-/******* Colors ********/
-.white {
-  color: white;
-}
-
-/******* Paragraph larger ********/
-p {
-   font-size: 14px;
-}
-
-/******* fonts ********/
-@font-face {
- font-family: "ClaireHand";
- src: url('./fonts/ClaireHandRegular.ttf');
-}
-@font-face {
- font-family: "ink";
- src: url('./fonts/Ink Blossoms.ttf');
-}
-
-/******* Text styles ******/
-.nav li a {
-  font: 16px/20px "ink","ClaireHand",Arial,Helvetica,sans-serif;
-  color: #000000;
-}
-
-.nav > .active > a {
-  text-decoration: none;
-  font-weight: bold;
-  border-radius:0px;
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: #FF9999;
-  color: #000 !important;
-  background-color: transparent !important;
-}
-
-.title {
-    font-family: "ink";
-    color: #389E9E !important;
-    font-weight: normal !important;
-    font-style: normal;
-}
-
-body {
-    font-family: "Merriweather";
-    color: #000000;
-    font-size: 14px;
-    line-height: 22px;
+  width: 200px;
+  height: auto;
 }
 
 /******* Backgrounds *********/
@@ -83,10 +41,79 @@ body {
   height: 600px;
 }
 
+body {
+  background-image: url("/images/handmadepaper.png");
+}
+
+nav {
+  background-color: white;
+}
+
+footer {
+  background-color: white; 
+}
+
+/******* Colors ********/
+.white {
+  color: white;
+}
+
+/******* fonts/styles ********/
+@font-face {
+ font-family: "ClaireHand";
+ src: url('./fonts/ClaireHandRegular.ttf');
+}
+@font-face {
+ font-family: "ink";
+ src: url('./fonts/Ink Blossoms.ttf');
+}
+
+.nav li a {
+  font: 16px/20px "ink","ClaireHand",Arial,Helvetica,sans-serif;
+  color: #563d7c;
+}
+
+.nav > .active > a {
+  text-decoration: none;
+  font-weight: bold;
+  border-radius:0px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #FF9999;
+  color: #000 !important;
+  background-color: transparent !important;
+}
+
+footer {
+  text-align: center;
+}
+
+.title {
+    font-family: "ink";
+    color: #389E9E !important;
+    font-weight: normal !important;
+    font-style: normal;
+}
+
+body {
+    font-family: "Merriweather";
+    color: #000000;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+p {
+   font-size: 14px;
+}
+
 /******* Thumbnails ********/
 
 
 /******* Banners ************/
+.navbar {
+  margin-bottom: 0; /* make banner right beneath navbar */
+}
+
 .banner {
   width: 100%;
   height: 250px;
@@ -126,17 +153,7 @@ body {
 
 /******* Footer stands clearer *********/
 footer {
-  background-color: #f5f5f5;
   padding-top: 20px;
-}
-
-/******* Incorporation of the logo inside navbar *********/
-.navbar {
-  margin-bottom: 0;
-}
-
-.navbar-nav {
-  padding-top: 15px;
 }
 
 /******* Get rid of borders *********/
@@ -150,7 +167,7 @@ footer {
   margin: 0px;
 }
 
-/******* Social ********/
+/******* Utilities ********/
 .no-highlight { /* link without the blue color */
   color: inherit; 
   text-decoration: none;
