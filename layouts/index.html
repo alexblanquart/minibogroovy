@@ -4,22 +4,25 @@
 
 <body>
 {{ partial "navigation.html" . }}
-<div class="container-fluid">
-	<div class="jumbotron bg-accueil"></div>
+<div class="container ">
+	<div class="jumbotron bg-transparent bg-accueil"></div>
 </div>
 
 <div class="container">
 	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<img class="img-responsive" src="/images/articles_blog.png"/>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-sm-12">
 			<div class="row">
-			{{ range .Site.Taxonomies.categories.blog }}
+			{{ range first 10 .Site.Taxonomies.tags.blog }}
 		        <div class="col-sm-4">
 		        	<div class="thumbnail text-center no-overflow">
 		            	<a href="{{ .Page.Permalink }}"><img src="/images/posts/{{ .Page.Params.image }}" class="img-responsive"></a>
 		            	<div class="caption">
-		              		<h2 class="title">{{ .Page.Title }}</h2>
-		              		<p>{{ .Page.Summary }}</p>
-		              		<p class="text-muted"><em>{{ .Page.Date.Format "Jan 2, 2006" }}</em></p>
+		              		<h3 class="title">{{ .Page.Title }}</h3>
 		              		<p><a href="{{ .Page.Permalink }}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
 		            	</div>
 		          	</div>
@@ -30,7 +33,29 @@
 	</div>
 </div>
 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<img class="img-responsive" src="/images/idees_creatis_a_refaire.png"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row">
+				{{ range .Site.Taxonomies.tags.idea }}
+					<div class="col-sm-4">
+					    <a href="/categories/{{ index .Page.Params.categories 0 }}" class="thumbnail withoutborder">
+					    	<img src="/images/categories/categories_couture.png" class="img-responsive">
+					    </a>
+					</div>
+				{{ end }}
+		    </div>
+		</div>
+	</div>
+</div>
+
 {{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
 
 </body>
 </html>

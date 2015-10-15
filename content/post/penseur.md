@@ -3,8 +3,8 @@ date = "2014-09-14T14:50:59+02:00"
 draft = true
 title = "Le penseur"
 image = "image14.png" 
-tags = ["peinture", "profond"]
-categories = ["blog"]
+tags = ["blog", "peinture", "profond"]
+
 +++
 
 Ce tableau, il me tient à coeur, je l’adore ! J’ai voulu travailler avec des lignes de façon à donner une sensation de profondeur en regardant ce tableau! Je l’adore adore…. :D

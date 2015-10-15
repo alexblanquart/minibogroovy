@@ -29,6 +29,7 @@ We aim at getting:
 - infinite scrolling
 - research
 - date in footer
+- about : present all my products
 
 # Bash commands which can be useful
 

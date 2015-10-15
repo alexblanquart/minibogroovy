@@ -3,8 +3,8 @@ date = "2014-10-03T14:50:59+02:00"
 draft = true
 title = "« le visage », le loup » et « l’arc de triomphe »"
 image = "image10.png" 
-tags = ["visage", "animaux", "peinture", "arts-plastiques"]
-categories = ["blog"]
+tags = ["blog", "visage", "animaux", "peinture", "arts-plastiques"]
+
 +++
 
 Ce tableau est dans ma véranda jardin ;) J’ai utilisé la technique acrylique et des vieux journaux et aluminium… et je me suis éclaté sans réfléchir pour arriver au résultat final …
