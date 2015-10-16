@@ -1,4 +1,4 @@
-![]({{ site.images }}/capture-d_c3a9cran-2014-11-02-c3a0-21-34-42.jpg)
+![](/images/posts/capture-d_c3a9cran-2014-11-02-c3a0-21-34-42.jpg)
 
 Cet ensemble je l’ai fait pour la fille d’une grande amie qui habite au Portugal. Alors le patron de ce sac, c’est le même que dans ce site là : http://indietutes.blogspot.fr/2009/10/toddler-backpack-pattern.html
 

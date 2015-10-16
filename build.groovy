@@ -35,8 +35,11 @@ new File("./posts/meta").eachFile { meta ->
         def post = slurper.parseText(meta.text)
         post.allTags = allTagsSet
         
+        // convert to html
         post.content = pdp.markdownToHtml(new File("./posts/content", meta.name.replace("json", "md")).text)
-        post.summary = post.content[0..Math.min(100, post.content.length()-1)]
+        // remove any html tags for summary
+        post.summary = post.content.replaceAll("<(.|\n)*?>", "") 
+        post.summary = post.summary[0..Math.min(100, post.summary.length()-1)]
         
         post.html =  meta.name.tokenize(".").first()+".html"
         post.url = "/pages/"+post.html
@@ -68,7 +71,7 @@ blogPosts.each { post ->
     }
 }
 new File("./static/pages", "blog.html").withWriter("utf-8") { writer ->
-    postsMustache.execute(writer, [posts:blogPosts]).flush();        
+    postsMustache.execute(writer, [category: "blog", posts:blogPosts]).flush();        
 }
 
 // generate each idea page
@@ -80,7 +83,7 @@ ideaPosts.each { post ->
     }
 }
 new File("./static/pages", "ideas.html").withWriter("utf-8") { writer ->
-    postsMustache.execute(writer, [posts:ideaPosts]).flush();        
+    postsMustache.execute(writer, [category: "idea", posts:ideaPosts]).flush();        
 }
 
 // generate each workshop page
@@ -92,14 +95,14 @@ workshopPosts.each { post ->
     }
 }
 new File("./static/pages", "workshops.html").withWriter("utf-8") { writer ->
-    postsMustache.execute(writer, [posts:workshopPosts]).flush();        
+    postsMustache.execute(writer, [category: "workshop", posts:workshopPosts]).flush();        
 }
 
 // generate each tag page
 allTagsSet.each { tag ->
     def tagPosts = allPosts.findAll{tag in it.tags}
     new File("./static/pages", tag+".html").withWriter("utf-8") { writer ->
-        postsMustache.execute(writer, [posts:tagPosts]).flush();        
+        postsMustache.execute(writer, [category: tagPosts[0].category, posts:tagPosts]).flush();        
     }
 }
 
