@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+{{> head.html}}
+
+<body>
+{{> navigation.html}}
+<div class="banner banner-blog"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="row">
+			    <div class="col-sm-12">
+			   		<h1 class="title">{{title}}</h1>
+			        <ul class="list-inline">
+			            <li><p class="text-muted"><em>{{date}}</em></p></li>
+			            <li><p>{{#tags}}{{> tag.html}}{{/tags}}</p></li>
+			        </ul>
+			    </div>
+			</div>
+			<div class="row">
+			 	<div class="col-sm-12">
+					<i class="fa fa-quote-left fa-3x fa-pull-left"></i>{{content}}
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p>{{> share.html}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					{{> me.html}}
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<div class="input-group">
+						<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+					</div>
+					<ul class="fa-ul" id="results-container"></ul>
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<p><strong>Articles récents</strong></p>
+					
+				</div>
+			</div>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+	  				<p><strong>Mots clés</strong></p>
+	  				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{> disqus.html}}
+{{> footer.html}}
+{{> scripts.html}}
+
+</body>
+</html>
