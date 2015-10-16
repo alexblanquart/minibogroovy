@@ -1,18 +1,20 @@
 @Grab('com.github.spullara.mustache.java:compiler:0.9.1')
-import com.github.mustachejava.DefaultMustacheFactory;
-import com.github.mustachejava.Mustache;
+@Grab('org.pegdown:pegdown:1.6.0')
+
+import com.github.mustachejava.DefaultMustacheFactory
+import com.github.mustachejava.Mustache
 import groovy.json.*
+import org.pegdown.PegDownProcessor
 
 // init mustache engine with our layouts
-def mf = new DefaultMustacheFactory("layouts");
-def mustache = mf.compile("post.html")
+def mf = new DefaultMustacheFactory("layouts")
+def postMustache = mf.compile("post.html")
+def aboutMustache = mf.compile("about.html")
+def postsMustache = mf.compile("posts.html")
+def indexMustache = mf.compile("index.html")
 def slurper = new JsonSlurper()
 
-// renew generated posts html
-new File("./static/posts").deleteDir()
-new File("./static/posts").mkdirs()
-
-// generate posts html
+// compute all tags found inside all posts
 def allMetaInfos = []
 new File("./posts/meta").eachFile { meta ->
     if (meta.name.endsWith("json")){
@@ -20,16 +22,93 @@ new File("./posts/meta").eachFile { meta ->
         allMetaInfos << metaInfo        
     }        
 }
-def allTags = []
-allMetaInfos.collect{ it.tags.each{allTags << it} }
-println allTags.countBy({it})
+def allTagsList = []
+allMetaInfos.collect{ it.tags.each{allTagsList << it} }
+def tagsByCount = allTagsList.countBy({it})
+def allTagsSet = allTagsList as Set 
 
-/*new File("./posts/meta").eachFile { meta ->
+// compute posts
+def pdp = new PegDownProcessor()
+def allPosts = []
+new File("./posts/meta").eachFile { meta ->
     if (meta.name.endsWith("json")){
-        new File("./static/posts", meta.name.replace("json", "html")).withWriter("utf-8") { writer ->
-            def metaInfo = slurper.parseText(meta.text)
-            allMetaInfos << metaInfo
-            mustache.execute(writer, slurper.parseText(metaInfo)).flush();        
-        }
+        def post = slurper.parseText(meta.text)
+        post.allTags = allTagsSet
+        
+        post.content = pdp.markdownToHtml(new File("./posts/content", meta.name.replace("json", "md")).text)
+        post.summary = post.content[0..Math.min(100, post.content.length()-1)]
+        
+        post.html =  meta.name.tokenize(".").first()+".html"
+        post.url = "/pages/"+post.html
+        post.date = Date.parse('dd-MM-yyyy', post.date) // get in Date form
+        allPosts << post
     }        
-}*/
+}
+
+// sort posts by date : the most recent on the top
+Locale.setDefault(Locale.FRENCH)
+allPosts.sort{it.date}
+allPosts = allPosts.reverse(true)
+def recentPosts = allPosts[0..4]
+allPosts.each { post ->
+    post.date = post.date.format("d MMMM yyyy") // pass again in string form for french
+    post.recentPosts = recentPosts
+}
+
+// renew pages
+new File("./static/pages").deleteDir()
+new File("./static/pages").mkdirs()
+
+// generate each post page
+def blogPosts = allPosts.findAll{it.category == "blog"}
+blogPosts.each { post ->
+    post.recentPosts = blogPosts[0..4]
+    new File("./static/pages", post.html).withWriter("utf-8") { writer ->
+        postMustache.execute(writer, post).flush();        
+    }
+}
+new File("./static/pages", "blog.html").withWriter("utf-8") { writer ->
+    postsMustache.execute(writer, [posts:blogPosts]).flush();        
+}
+
+// generate each idea page
+def ideaPosts = allPosts.findAll{it.category == "idea"}
+ideaPosts.each { post ->
+    post.recentPosts = ideaPosts[0]
+    new File("./static/pages", post.html).withWriter("utf-8") { writer ->
+        postMustache.execute(writer, post).flush();        
+    }
+}
+new File("./static/pages", "ideas.html").withWriter("utf-8") { writer ->
+    postsMustache.execute(writer, [posts:ideaPosts]).flush();        
+}
+
+// generate each workshop page
+def workshopPosts = allPosts.findAll{it.category == "workshop"}
+workshopPosts.each { post ->
+    post.recentPosts = workshopPosts[0]
+    new File("./static/pages", post.html).withWriter("utf-8") { writer ->
+        postMustache.execute(writer, post).flush();        
+    }
+}
+new File("./static/pages", "workshops.html").withWriter("utf-8") { writer ->
+    postsMustache.execute(writer, [posts:workshopPosts]).flush();        
+}
+
+// generate each tag page
+allTagsSet.each { tag ->
+    def tagPosts = allPosts.findAll{tag in it.tags}
+    new File("./static/pages", tag+".html").withWriter("utf-8") { writer ->
+        postsMustache.execute(writer, [posts:tagPosts]).flush();        
+    }
+}
+
+// generate about page
+new File("./static/pages", "about.html").withWriter("utf-8") { writer ->
+    aboutMustache.execute(writer, null).flush();        
+}
+
+// generate index page
+new File("./static/pages", "index.html").withWriter("utf-8") { writer ->
+    indexMustache.execute(writer, [recentBlog:blogPosts[0..9]]).flush();        
+}
