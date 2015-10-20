@@ -106,8 +106,12 @@ p {
    font-size: 14px;
 }
 
-/******* Thumbnails ********/
-
+/******* Blog Carousel ********/
+#carousel-blog .carousel-inner .active.left { left: -25%; }
+#carousel-blog .carousel-inner .next        { left:  25%; }
+#carousel-blog .carousel-inner .prev    { left: -25%; }
+#carousel-blog .carousel-control        { width:  4%; }
+#carousel-blog .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 
 /******* Banners ************/
 .navbar {

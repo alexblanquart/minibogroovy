@@ -16,19 +16,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="row">
-			{{#recentBlog}}
-		        <div class="col-sm-4">
-		        	<div class="thumbnail text-center">
-		            	<a href="{{url}}"><img src="/images/posts/{{image}}" class="img-responsive"></a>
-		            	<div class="caption">
-		              		<h3 class="title">{{title}}</h3>
-		              		<p><a href="{{url}}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
-		            	</div>
-		          	</div>
-		        </div>
-		    {{/recentBlog}}
-		    </div>
+			{{> carousel.html}}
 		</div>
 	</div>
 </div>
