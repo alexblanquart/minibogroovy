@@ -113,6 +113,10 @@ p {
 #carousel-blog .carousel-control        { width:  4%; }
 #carousel-blog .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 
+#carousel-blog > img {
+  max-height: 200px;
+}
+
 /******* Banners ************/
 .navbar {
   margin-bottom: 0; /* make banner right beneath navbar */

@@ -29,6 +29,7 @@ We aim at getting:
 - research
 - about : present all my products
 - missing images ?
+- cache for generating images/pages if present or to renew ? and gain in generation time
 
 # Bash commands which can be useful
 
