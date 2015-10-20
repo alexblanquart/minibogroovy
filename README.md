@@ -28,6 +28,7 @@ We aim at getting:
 - infinite scrolling
 - research
 - about : present all my products
+- missing images ?
 
 # Bash commands which can be useful
 

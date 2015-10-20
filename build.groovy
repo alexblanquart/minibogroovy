@@ -102,6 +102,7 @@ new File("./static/pages", "workshops.html").withWriter("utf-8") { writer ->
 allTagsSet.each { tag ->
     def tagPosts = allPosts.findAll{tag in it.tags}
     new File("./static/pages", tag+".html").withWriter("utf-8") { writer ->
+        // posts list not empty as tag could not exist alone
         postsMustache.execute(writer, [category: tagPosts[0].category, posts:tagPosts]).flush();        
     }
 }
