@@ -113,5 +113,5 @@ new File("./static/pages", "about.html").withWriter("utf-8") { writer ->
 
 // generate index page
 new File("./static/pages", "index.html").withWriter("utf-8") { writer ->
-    indexMustache.execute(writer, [recentBlog:blogPosts[0..9]]).flush();        
+    indexMustache.execute(writer, [recentBlog:blogPosts[0..10]]).flush();        
 }
