@@ -27,6 +27,13 @@ allMetaInfos.collect{ it.tags.each{allTagsList << it} }
 def tagsByCount = allTagsList.countBy({it})
 def allTagsSet = allTagsList as Set 
 
+// create search.json file
+new File("static", "search.json").delete()
+new File("static", "search.json").withWriter("utf-8") { writer ->
+    writer.write(new JsonBuilder(allMetaInfos).toPrettyString())
+}
+
+
 // compute posts
 def pdp = new PegDownProcessor()
 def allPosts = []
