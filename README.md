@@ -1,7 +1,3 @@
-# What is it ?
-
-Jekyll website with facilities for non tech to use it.
-
 # What is missing ?
 
 We aim at getting:
