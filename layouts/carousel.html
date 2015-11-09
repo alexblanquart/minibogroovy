@@ -1,25 +1,11 @@
-<div id="carousel-blog" class="carousel slide" data-ride="carousel">
-	<div class="carousel-inner" role="listbox">
+<div id="carousel-blog">
 	{{#recentBlog}}
-		<div class="item">
-			<div class="col-sm-4">
-				<a href="{{url}}"><img src="/images/posts/{{image}}" class="img-responsive"></a>
-				<div class="carousel-caption">
-					<h3 class="title">{{title}}</h3>
-			        <p><a href="{{url}}" class="btn btn-default btn-sm" role="button">Lire la suite</a></p>
-	      		</div>
+		<div class="thumbnail">
+			<a href="{{url}}"><img src="/images/posts/height/{{image}}"></a>
+			<div class="caption">
+				<h3>{{title}}</h3>
+				<p><a href="{{url}}" class="btn btn-button-white btn-sm" role="button">Lire la suite</a></p>
 			</div>
-    	</div>
+		</div>
 	{{/recentBlog}}
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-blog" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Précédent</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-blog" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Suivant</span>
-  </a>
 </div>

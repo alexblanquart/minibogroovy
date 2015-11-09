@@ -89,10 +89,9 @@ footer {
 }
 
 .title {
-    font-family: "ink";
-    color: #389E9E !important;
-    font-weight: normal !important;
-    font-style: normal;
+    font-family: "ClaireHand";
+    color: #89d0be !important;
+    font-size: x-large;
 }
 
 body {
@@ -107,14 +106,28 @@ p {
 }
 
 /******* Blog Carousel ********/
-#carousel-blog .carousel-inner .active.left { left: -25%; }
-#carousel-blog .carousel-inner .next        { left:  25%; }
-#carousel-blog .carousel-inner .prev    { left: -25%; }
-#carousel-blog .carousel-control        { width:  4%; }
-#carousel-blog .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+/* add some space between each item inside carousel */
+#carousel-blog .slick-slide {
+  margin: 0 10px; 
+}
 
-#carousel-blog > img {
-  max-height: 200px;
+/* caption made as an overlay of the image */
+#carousel-blog .thumbnail {
+  position:relative;
+}
+#carousel-blog img {
+  opacity: 0.8;
+}
+#carousel-blog .caption {
+  width: 100%;
+  top: 30%;
+  left: 0;
+  text-align: center;
+  position: absolute;
+  color: white;
+}
+#carousel-blog .caption h3 {
+  font-family: "ClaireHand";
 }
 
 /******* Banners ************/
@@ -179,4 +192,27 @@ footer {
 .no-highlight { /* link without the blue color */
   color: inherit; 
   text-decoration: none;
+}
+
+/******* Buttons *********/
+.btn-button-name, .btn-button-name:link, .btn-button-name:visited {
+    background-color: transparent;
+    border-radius: 0;
+    color: #89d0be;
+    border: 2px solid #89d0be;
+}
+.btn-button-name:active, .btn-button-name:hover {
+    background-color: #89d0be;
+    color: #fff
+}
+
+.btn-button-white, .btn-button-white:link, .btn-button-white:visited {
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    border: 2px solid white;
+}
+.btn-button-white:active, .btn-button-white:hover {
+    background-color: white;
+    color: black;
 }

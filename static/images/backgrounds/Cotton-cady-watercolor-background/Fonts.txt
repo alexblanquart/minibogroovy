@@ -1,0 +1,10 @@
+Fonts used in this design;
+
+Font: Norwester, 
+Author: Jamie Wilson, 
+Url: http://www.fontsquirrel.com/fonts/norwester; 
+
+Font: Raleway, 
+Author: The League of Moveable Type, 
+Url: http://www.fontsquirrel.com/fonts/raleway; 
+
