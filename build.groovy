@@ -9,8 +9,10 @@ import org.pegdown.PegDownProcessor
 // init mustache engine with our layouts
 def mf = new DefaultMustacheFactory("layouts")
 def postMustache = mf.compile("post.html")
+def ideaMustache = mf.compile("idea.html")
 def aboutMustache = mf.compile("about.html")
 def postsMustache = mf.compile("posts.html")
+def ideasMustache = mf.compile("ideas.html")
 def indexMustache = mf.compile("index.html")
 def slurper = new JsonSlurper()
 
@@ -44,6 +46,10 @@ new File("./posts/meta").eachFile { meta ->
         
         // convert to html
         post.content = pdp.markdownToHtml(new File("./posts/content", meta.name.replace("json", "md")).text)
+        if (new File("./posts/material", meta.name.replace("json", "md")).exists()){
+            post.material = pdp.markdownToHtml(new File("./posts/material", meta.name.replace("json", "md")).text)
+        }
+        
         // remove any html tags for summary
         post.summary = post.content.replaceAll("<(.|\n)*?>", "") 
         post.summary = post.summary[0..Math.min(100, post.summary.length()-1)]
@@ -86,11 +92,11 @@ def ideaPosts = allPosts.findAll{it.category == "idea"}
 ideaPosts.each { post ->
     post.recentPosts = ideaPosts[0]
     new File("./static/pages", post.html).withWriter("utf-8") { writer ->
-        postMustache.execute(writer, post).flush();        
+        ideaMustache.execute(writer, post).flush();        
     }
 }
 new File("./static/pages", "ideas.html").withWriter("utf-8") { writer ->
-    postsMustache.execute(writer, [category: "idea", posts:ideaPosts]).flush();        
+    ideasMustache.execute(writer, [category: "idea", posts:ideaPosts]).flush();        
 }
 
 // generate each workshop page
