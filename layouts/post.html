@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+{{> head.html}}
+
+<body>
+{{> navigation.html}}
+<div class="banner banner-{{category}}"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="row">
+			    <div class="col-sm-12">
+			   		<h1 class="title">{{title}}</h1>
+			        <ul class="list-inline">
+			            <li><p class="text-muted"><i class="fa fa-calendar"></i> {{date}}</p></li>
+			            <li><p>{{#tags}}{{> tag.html}}{{/tags}}</p></li>
+			        </ul>
+			    </div>
+			</div>
+			<div class="row">
+			 	<div class="col-sm-12 post">{{{content}}}
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-muted"><i class="fa fa-share"></i> Partager {{> share.html}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="well">
+				{{> me.html}}
+			</div>
+			<div class="well">
+				<p class="text-uppercase text-muted">Articles récents</p>
+				{{#recentPosts}}
+        			<p><a href="{{url}}">{{title}}</a></p>
+    			{{/recentPosts}}
+			</div>
+			<div class="well">
+	  			<p class="text-uppercase text-muted">Mots clés</p>
+	  			<p>{{#allTags}}{{> tag.html}}{{/allTags}}</p>
+			</div>
+		</div>
+	</div>
+</div>
+{{> disqus.html}}
+{{> footer.html}}
+{{> scripts.html}}
+
+</body>
+</html>
