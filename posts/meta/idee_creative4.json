@@ -3,6 +3,10 @@
 	"tags": ["recyclage"],
 	"image": "idea.jpg",
 	"date": "13-10-2015",
+<<<<<<< HEAD
 	"category": "idea",
 	"material": ["il faut ça", "et ça", "et ça aussi"]
+=======
+	"category": "idea"
+>>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 }
