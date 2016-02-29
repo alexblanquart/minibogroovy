@@ -13,11 +13,7 @@
 			    <div class="col-sm-12">
 			   		<h1 class="title">{{title}}</h1>
 			        <ul class="list-inline">
-<<<<<<< HEAD
 			            <li><p class="text-muted"><i class="fa fa-calendar"></i> {{date}}</p></li>
-=======
-			            <li><p class="text-muted"><em>{{date}}</em></p></li>
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 			            <li><p>{{#tags}}{{> tag.html}}{{/tags}}</p></li>
 			        </ul>
 			    </div>
@@ -28,16 +24,11 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
-<<<<<<< HEAD
 					<p class="text-muted"><i class="fa fa-share"></i> Partager {{> share.html}}</p>
-=======
-					<p>{{> share.html}}</p>
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-3">
-<<<<<<< HEAD
 			<div class="well">
 				{{> me.html}}
 			</div>
@@ -50,35 +41,6 @@
 			<div class="well">
 	  			<p class="text-uppercase text-muted">Mots clés</p>
 	  			<p>{{#allTags}}{{> tag.html}}{{/allTags}}</p>
-=======
-			<div class="panel panel-default">
-  				<div class="panel-body">
-					{{> me.html}}
-				</div>
-			</div>
-			<div class="panel panel-default">
-  				<div class="panel-body">
-					<div class="input-group">
-						<input id="search-input" type="text" class="form-control" placeholder="Rechercher...">
-						<span class="input-group-addon"><i class="fa fa-search"></i></span>
-					</div>
-					<ul class="fa-ul" id="results-container"></ul>
-				</div>
-			</div>
-			<div class="panel panel-default">
-  				<div class="panel-body">
-					<p><strong>Articles récents</strong></p>
-					{{#recentPosts}}
-        				<p><a href="{{url}}">{{title}}</a></p>
-    				{{/recentPosts}}
-				</div>
-			</div>
-			<div class="panel panel-default">
-  				<div class="panel-body">
-	  				<p><strong>Mots clés</strong></p>
-	  				<p>{{#allTags}}{{> tag.html}}{{/allTags}}</p>
-				</div>
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 			</div>
 		</div>
 	</div>

@@ -42,11 +42,7 @@ footer {
 }
 
 body {
-<<<<<<< HEAD
   /*background-image: url("/images/handmadepaper.png");*/
-=======
-  background-image: url("/images/handmadepaper.png");
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 }
 
 nav {
@@ -121,10 +117,7 @@ p {
 }
 #carousel-blog img {
   opacity: 0.8;
-<<<<<<< HEAD
   height: 350px;
-=======
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 }
 #carousel-blog .caption {
   width: 100%;
@@ -147,12 +140,9 @@ p {
   padding-right: 8px; 
   padding-left: 3px; 
 }
-<<<<<<< HEAD
 .post img {
   width: 500px;
 }
-=======
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
 
 /******* Banners ************/
 .navbar {
@@ -169,11 +159,7 @@ p {
 }
 
 .banner-blog {
-<<<<<<< HEAD
   background: url("/images/banners/blog.jpg") no-repeat center fixed;
-=======
-  background-image: url("/images/banners/blog.jpg");
->>>>>>> 31538edae9d3cd55d386176ede86ed25c3556415
   background-size: cover;
 }
 
