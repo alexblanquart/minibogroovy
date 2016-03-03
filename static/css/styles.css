@@ -150,6 +150,12 @@ p {
 }
 
 /******* Search *************/
+/* custom css */
+#prefetch a {
+  text-decoration: none !important
+}
+
+/* classic css */
 .typeahead,
 .tt-query,
 .tt-hint {

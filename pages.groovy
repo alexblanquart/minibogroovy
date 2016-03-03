@@ -37,8 +37,8 @@ println "*********\n"
 def mf = new DefaultMustacheFactory("layouts")
 def postMustache = mf.compile("post.html")
 def postsMustache = mf.compile("posts.html")
-/*def ideaMustache = mf.compile("idea.html")
 def aboutMustache = mf.compile("about.html")
+/*def ideaMustache = mf.compile("idea.html")
 def ideasMustache = mf.compile("ideas.html")
 def indexMustache = mf.compile("index.html")*/
 
@@ -67,6 +67,11 @@ allTags.each { tag ->
         // posts list not empty as tag could not exist alone
         postsMustache.execute(writer, [category: tagPosts[0].category, posts:tagPosts]).flush();        
     }
+}
+
+// create about page
+new File("./static/pages", "about.html").withWriter("utf-8") { writer ->
+    aboutMustache.execute(writer, null).flush();        
 }
 
 // create search file
