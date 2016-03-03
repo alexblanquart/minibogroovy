@@ -50,7 +50,7 @@ posts.each { post ->
     post.content = pdp.markdownToHtml(post.content)
     new File("./static/pages", post.name+".html").withWriter("utf-8") { writer ->
         postMustache.execute(writer, 
-            post + [recentPosts:recentPosts, summary:post.content.take(100), allTags:allTags]
+            post + [recentPosts:recentPosts, summary:post.content.take(100), allTags:tagsByCount.entrySet()]
         ).flush();        
     }
 }
@@ -67,4 +67,9 @@ allTags.each { tag ->
         // posts list not empty as tag could not exist alone
         postsMustache.execute(writer, [category: tagPosts[0].category, posts:tagPosts]).flush();        
     }
+}
+
+// create search file
+new File("static", "posts.json").withWriter("utf-8") { writer ->
+    writer.write(JsonOutput.toJson(posts.collect{ ["title":it.title, "url":"/pages/"+it.name+".html"] }))
 }

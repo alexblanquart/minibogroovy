@@ -14,7 +14,11 @@
 			   		<h1 class="title">{{title}}</h1>
 			        <ul class="list-inline">
 			            <li><p class="text-muted"><i class="fa fa-calendar"></i> {{date}}</p></li>
-			            <li><p>{{#tags}}{{> tag.html}}{{/tags}}</p></li>
+			            <li>
+			            {{#tags}}
+			            	<a href="/pages/{{.}}.html"><span class="label label-info">{{.}}</span></a>
+			            {{/tags}}
+			            </li>
 			        </ul>
 			    </div>
 			</div>
@@ -40,7 +44,11 @@
 			</div>
 			<div class="well">
 	  			<p class="text-uppercase text-muted">Mots clés</p>
-	  			<p>{{#allTags}}{{> tag.html}}{{/allTags}}</p>
+	  			<ul class="list-inline">
+	  			{{#allTags}}
+	  				<li><a href="/pages/{{key}}.html">{{key}} <span class="badge">{{value}}</span></a></li>
+	  			{{/allTags}}
+	  			</ul>
 			</div>
 		</div>
 	</div>

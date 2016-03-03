@@ -47,9 +47,23 @@ $(document).ready(function () {
   });
    
 
-  var index = lunr(function () {
-    this.field('title', {boost: 10})
-  })
+  var posts = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    identify: function(obj) { return obj.title; },
+    prefetch: '/posts.json'
+  });
+
+  $('#prefetch .typeahead').typeahead(null, {
+    name: 'posts',
+    display: 'title',
+    source: posts,
+    templates: {
+        suggestion: function(data) {
+            return "<div><a href="+data.url+">"+data.title+"</a></div>";
+        }
+    }
+  });
 
 
 
