@@ -48,6 +48,7 @@ Locale.setDefault(Locale.FRENCH)
 def recentPosts = posts.take(5)
 posts.each { post ->
     post.content = pdp.markdownToHtml(post.content)
+    post.date = Date.parse('dd-MM-yyyy', post.date).format('d MMMM yyyy')
     new File("./static/pages", post.name+".html").withWriter("utf-8") { writer ->
         postMustache.execute(writer, 
             post + [recentPosts:recentPosts, summary:post.content.take(100), allTags:tagsByCount.entrySet()]

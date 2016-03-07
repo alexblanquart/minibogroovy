@@ -33,22 +33,30 @@
 			</div>
 		</div>
 		<div class="col-sm-3">
-			<div class="well">
-				{{> me.html}}
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					{{> me.html}}
+				</div>
 			</div>
-			<div class="well">
-				<p class="text-uppercase text-muted">Articles récents</p>
-				{{#recentPosts}}
-        			<p><a href="{{url}}">{{title}}</a></p>
-    			{{/recentPosts}}
+			<div class="panel panel-default">
+  				<div class="panel-body">
+					<p class="text-uppercase text-muted">Articles récents</p>
+					<ul class="list-unstyled">
+					{{#recentPosts}}
+        				<li><a href="{{url}}">{{title}}</a></li>
+    				{{/recentPosts}}
+    				</ul>
+				</div>
 			</div>
-			<div class="well">
-	  			<p class="text-uppercase text-muted">Mots clés</p>
-	  			<ul class="list-inline">
-	  			{{#allTags}}
-	  				<li><a href="/pages/{{key}}.html">{{key}} <span class="badge">{{value}}</span></a></li>
-	  			{{/allTags}}
-	  			</ul>
+			<div class="panel panel-default">
+  				<div class="panel-body">
+    				<p class="text-uppercase text-muted">Mots clés</p>
+	  				<ul class="list-unstyled">
+	  				{{#allTags}}
+	  					<li><a href="/pages/{{key}}.html">{{key}} <span class="label label-info">{{value}}</span></a></li>
+	  				{{/allTags}}
+	  				</ul>
+  				</div>
 			</div>
 		</div>
 	</div>
