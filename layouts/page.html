@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+{{> head.html}}
+
+<body>
+{{> navigation.html}}
+<div class="banner banner-blog"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="grid">
+				{{#posts}}
+		        <div class="grid-item col-sm-4">
+		        	<div class="thumbnail text-center">
+		            	<a href="/{{name}}.html"><img src="/images/posts/{{image}}" class="img-responsive"></a>
+		            	<div class="caption">
+		              		<h2 class="title">{{title}}</h2>
+		              		<p>{{summary}}</p>
+		              		<p class="text-muted"><em>{{date}}</em></p>
+		              		<p><a href="/{{name}}.html" class="btn btn-button-name btn-sm" role="button">Lire la suite</a></p>
+		            	</div>
+		          	</div>
+		        </div>
+		    	{{/posts}}
+		    </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<nav>
+			  <ul class="pagination">
+			    <li>
+			      <a href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    {{#pages}}
+			    	<li><a href="/pages/{{index}}.html">{{index}}</a></li>
+			    {{/pages}}
+			    <li>
+			      <a href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+{{> footer.html}}
+{{> scripts.html}}
+
+</body>
+</html>

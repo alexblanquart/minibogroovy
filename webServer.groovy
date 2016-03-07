@@ -5,7 +5,7 @@ import static ratpack.groovy.Groovy.ratpack
 ratpack {
   handlers {
     files {
-      dir "static" indexFiles "pages/index.html"
+      dir "static" indexFiles "index.html"
     }
   }
 }
